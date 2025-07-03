@@ -7,13 +7,13 @@ Aqui apresento quem sou, minha trajetória, hobbies, formação e alguns projeto
 
 ## 	:open_file_folder: Estrutura de Pastas
 
-/
-|-- index.html
-|-- /src
-    |-- /images
-    |-- /css
-    |-- /js (se tiver scripts)
-|-- README.md
+/  
+|-- index.html  
+|-- /src  
+    |-- /images  
+    |-- /css  
+    |-- /js (se tiver scripts)  
+|-- README.md  
 
 ---
 
