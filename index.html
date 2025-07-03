@@ -12,14 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!--Chamando ícones flaticon/icon bootstrap-->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
 </head>
 
 <body>
@@ -43,7 +35,7 @@
     <main>
         <!--Apresentação inicial da página-->
         <section class="primeira-pagina" id="inicio">
-            <div class="type">
+            <div class="efeito-escrita">
                 <h1>Olá, eu sou a <span>Isabelly</span>! Este é meu portfólio.</h1>
             </div>
             <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
@@ -54,7 +46,7 @@
         <!--Seção "Sobre mim" + "hobbies"-->
         <section class="sobre-mim" id="sobre">
             <div class="interface">
-                <div class="flex">
+                <div class="container">
                     <div class="txt-sobre-mim">
                         <h2>Quem sou eu?</h2>
                         <p>
@@ -76,9 +68,6 @@
                             e
                             inovar.
                         </p>
-                        <div class="btn-contato">
-                            <a href="#contato"><button>Entre em contato</button></a>
-                        </div>
                     </div>
                     <div class="img-sobre-mim">
                         <img id="foto-isa" src="src/images/isabelly2.png" alt="minha foto">
@@ -89,8 +78,8 @@
         </section>
         <section class="meus-hobbies" id="hobbies">
             <div class="interface">
-                <h2 class="titulo">MEUS <span>HOBBIES</span>:</h2>
-                <div class="flex">
+                <h2 class="titulo">MEUS HOBBIES:</h2>
+                <div class="container">
                     <div class="hobbies-box">
                         <img class="img-hobbie" src="src/images/jogador_verde.png" alt="icone jogador">
                         <h3>FUTEBOL</h3>
@@ -129,12 +118,11 @@
                 </div>
             </div>
         </section>
-
         <!--Seção "Formação Acadêmica"-->
         <section class="formacao-academica" id="formacao">
             <div class="interface">
-                <h2 class="titulo">Formação <span>Acadêmica</span></h2>
-                <div class="flex">
+                <h2 class="titulo">Formação Acadêmica</h2>
+                <div class="container">
                     <div class="graduacao">
                         <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
                         <p>Centro Universitário Internacional (Uninter) - Em andamento (02/2025 - Atual)</p>
@@ -152,8 +140,8 @@
         <!--Seção "Projetos"-->
         <section class="meus-projetos" id="projetos">
             <div class="interface">
-                <h2 class="titulo">Meus <span>projetos</span>:</h2>
-                <div class="flex">
+                <h2 class="titulo">Meus projetos:</h2>
+                <div class="container">
                     <div class="card-projeto">
                         <img src="src/images/banco-dados.png" alt="imagem projeto banco de dados">
                         <h3>Projeto - Locadora de Veículos</h3>
@@ -164,20 +152,25 @@
                         <p>Acesse em meu <a href="">GitHub</a>.</p>
                     </div>
                     <div class="card-projeto">
-                        <img src="src/images/banco-dados.png" alt="imagem projeto banco de dados">
-                        <h3>Projeto - </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque explicabo accusantium aut
-                            pariatur possimus necessitatibus, veniam maiores hic vero quae. Odit qui nostrum error porro
-                            quisquam iusto cumque enim nobis!</p>
-                        <p>Acesse em meu <a href="">GitHub</a>.</p>
+                        <img src="src/images/Python.png" alt="imagem projeto python">
+                        <h3>Projeto - Lógica de Programação</h3>
+                        <p>Projeto acadêmico criado para uma atividade prática da disciplina de Lógica de Programação e
+                            Algoritmos, do meu curso de Análise e Desenvolvimento de Sistemas. Nele resolvo problemas
+                            simples usando Python, aplicando entradas de dados, condicionais, laços de repetição e
+                            funções. O objetivo foi fortalecer a base de pensamento lógico e versionamento de código no
+                            GitHub.</p>
+                        <p>Acesse em meu <a
+                                href="https://github.com/umaisaduasbeli/Trabalho-Logica-de-Programacao-e-Algoritimos">GitHub</a>.
+                        </p>
                     </div>
                     <div class="card-projeto">
-                        <img src="src/images/banco-dados.png" alt="imagem projeto banco de dados">
-                        <h3>Projeto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe facilis tempore
-                            reiciendis accusamus accusantium, eligendi quis doloribus, nulla aperiam enim, porro ipsum
-                            natus inventore alias asperiores recusandae? Consectetur, culpa.</p>
-                        <p>Acesse em meu <a href="">GitHub</a>.</p>
+                        <img src="src/images/botao.png" alt="imagem projeto simples">
+                        <h3>Projeto - Primeiros testes (Git/GitHub)</h3>
+                        <p>Repositório criado para praticar os primeiros comandos de Git e aprender a usar o GitHub na
+                            prática. Além dos testes de versionamento, commits, branches e push, também inclui um botão
+                            extremamente simples, feito com HTML, CSS e JavaScript, para exercitar a integração entre as
+                            linguagens e o uso de interatividade básica na página. </p>
+                        <p>Acesse em meu <a href="https://github.com/umaisaduasbeli/aulagit_github">GitHub</a>.</p>
 
                     </div>
                 </div>
@@ -187,7 +180,7 @@
         <!--Seção "Contato"-->
         <section class="entre-contato" id="contato">
             <div class="interface">
-                <h2 class="titulo">Entre em <span>Contato</span>!</h2>
+                <h2 class="titulo">Entre em Contato!</h2>
                 <p>Preencha o formuláio com sua mensagem e entro em contato com você em breve!</p>
                 <form action="" class="form-box">
                     <div class="formulario">
@@ -209,26 +202,34 @@
                 </form>
             </div>
         </section>
+        <!--Seta para voltar ao topo-->
+        <div data-anima="rolar">
+            <a href="#inicio">
+                <div class="topo">
+                    <img src="src/images/seta.png" alt="voltar ao topo">
+                </div>
+            </a>
+        </div>
     </main>
     <!--Adicionando rodapé-->
     <footer>
         <div class="interface">
-            <div class="flex">
+            <div class="container">
+                <p>&#169; Desenvolvido por Isabelly Pereira Neto, 2025.</p>
                 <div class="icones-rodape">
-                    <a href="https://github.com/umaisaduasbeli" target="_blank"><img src="src/images/github_green.png"
+                    <a href="https://github.com/umaisaduasbeli" target="_blank"><img src="src/images/github-verde.png"
                             alt="icone github"></a>
-                </div>
-                <div class="icones-rodape">
                     <a href="https://instagram.com/umaisaduasbeli" target="_blank"><img
-                            src="src/images/instagram_green.png" alt="icone instagram"></a>
-                </div>
-                <div class="icones-rodape">
+                            src="src/images/instagram-verde.png" alt="icone instagram"></a>
                     <a href="https://www.linkedin.com/in/isabelly-pereira-neto/" target="_blank"><img
-                            src="src/images/linkedin_green.png" alt="icone linkedin"></a>
+                            src="src/images/linkedin-verde.png" alt="icone linkedin"></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!--Adicionando JAVASCRIPT ao site-->
+    <script src="src/js/animacao-scroll.js"></script>
 </body>
 
 </html>

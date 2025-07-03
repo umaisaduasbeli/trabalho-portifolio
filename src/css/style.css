@@ -1,5 +1,5 @@
 /*INTERFACE GERAL*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,25 +7,26 @@
 }
 
 html {
-  scroll-behavior: smooth;      
-  scroll-padding-top: 50px; /* Compensa altura do header fixo, reservando um espaço para o menu*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+    /*compensa altura do header fixo, reservando um espaço para o menu*/
 }
 
-body{
+body {
     background-color: #0a0a0a;
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.container {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -35,31 +36,30 @@ body{
     cursor: pointer;
 }
 
-.btn-contato button:hover{
+.btn-contato button:hover {
     box-shadow: 0px 0px 8px #00ff00;
     transform: scale(1.05);
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
-    color: #3be374;
-}
-
 /*ESTILO INTERFACE*/
-header{
+header {
     padding: 0px 4%;
     position: fixed;
-    top: 0; left: 0; right: 0;
+    /*menu fixado por toda a página, não some ao descer a pag*/
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
 }
 
-header > .interface-menu{
+header>.interface-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@ header > .interface-menu{
     backdrop-filter: blur(15px);
 }
 
-header a{
+header a {
     color: #747474;
     font-size: 20px;
     text-decoration: none;
@@ -76,22 +76,24 @@ header a{
     transition: .3s;
 }
 
-header a:hover{
+header a:hover {
     color: #00ff00;
     transform: scale(1.1);
+    /*efeito ao passar mouse no menu*/
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav li{
+header nav li {
     display: inline-block;
     padding: 0 40px;
+    /*ajuste do menu um em frente ao outro*/
 }
 
 /*PERSONALIZANDO O ÍNICIO DA PÁGINA*/
-section.primeira-pagina{
+.primeira-pagina {
     display: flex;
     flex-direction: column;
     padding: 40px 4%;
@@ -101,7 +103,7 @@ section.primeira-pagina{
     min-height: 100vh;
 }
 
-.primeira-pagina .type{
+.primeira-pagina .efeito-escrita {
     font-size: 40px;
     display: inline-block;
     margin-top: 70px;
@@ -111,11 +113,10 @@ section.primeira-pagina{
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-
     animation: mark .5s step-end infinite, write 6s steps(22, end) infinite;
 }
 
-.primeira-pagina .type span{
+.primeira-pagina .efeito-escrita span {
     color: #3be374;
 }
 
@@ -129,41 +130,46 @@ section.primeira-pagina{
     20% {
         width: 51ch;
     }
+
     70% {
         width: 51ch;
     }
+
     85% {
         width: 0;
     }
+
     100% {
         width: 0;
     }
+
+    /*Efeito de escrita na primeira página do portifolio*/
 }
 
-.primeira-pagina p{
+.primeira-pagina p {
     color: #fff;
     font-size: 30px;
 }
 
-.primeira-pagina .btn-contato button{
+.primeira-pagina .btn-contato button {
     font-size: 32px;
     margin-top: 30px;
 }
 
 /*PERSONALIZANDO SOBRE MIM*/
 
-section.sobre-mim .flex{
+section.sobre-mim .container {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.sobre-mim h1{
+.sobre-mim h1 {
     color: #00ff00;
     font-size: 45px;
 }
 
-.sobre-mim .txt-sobre-mim{
+.sobre-mim .txt-sobre-mim {
     color: #fff;
     margin: 50px 0;
     line-height: 1.6;
@@ -172,164 +178,164 @@ section.sobre-mim .flex{
     hyphens: auto;
 }
 
-.sobre-mim .btn-contato{
-    margin-top: 30px;
-}
-
 /*PERSONALIZANDO MEUS HOBBIES*/
-section.meus-hobbies{
+.meus-hobbies {
     padding: 40px 4%;
 }
 
-section.meus-hobbies .flex{
+.meus-hobbies .container {
     display: flex;
     gap: 45px;
     align-items: stretch;
 }
 
-.meus-hobbies .hobbies-box{
+.meus-hobbies .hobbies-box {
     color: #fff;
     flex: 1;
     padding: 40px;
     border-radius: 30px;
+    border: 3px solid #3be374;
     margin-top: 50px;
     transition: 1.2s;
+    /*personalizando as caixas de hobbie */
 }
 
-.meus-hobbies .hobbies-box:hover{
+.meus-hobbies .hobbies-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #3be37480;
+    box-shadow: 0 0 30px #3be37480;
 }
 
-.meus-hobbies .hobbies-box img{
+.meus-hobbies .hobbies-box img {
     width: 70px;
     height: auto;
 }
 
-.meus-hobbies .hobbies-box h3{
+.meus-hobbies .hobbies-box h3 {
     font-size: 26px;
     margin: 15px 0;
 }
 
-.meus-hobbies .hobbies-box p{
+.meus-hobbies .hobbies-box p {
     text-align: justify;
     hyphens: auto;
-    font-size: 17px;   
+    font-size: 17px;
     line-height: 1.6;
     font-size: 16px;
 }
 
-.meus-hobbies .hobbies-box ul{
+.meus-hobbies .hobbies-box ul {
     list-style-type: none;
 }
 
-.meus-hobbies .hobbies-box ul{
+.meus-hobbies .hobbies-box ul {
     list-style-type: none;
 }
 
 .meus-hobbies .hobbies-box ul li::before {
-  content: "- "; 
+    content: "- ";
 }
 
 /*PERSONALIZANDO FORMAÇÃO ACADÊMICA*/
-section.formacao-academica{
+.formacao-academica {
     padding: 40px 4%;
 }
 
-section.formacao-academica .flex{
+.formacao-academica .container {
     display: flex;
     gap: 45px;
     align-items: stretch;
 }
 
-.formacao-academica .graduacao{
+.formacao-academica .graduacao {
     color: #fff;
     flex: 1;
     padding: 40px;
     border-radius: 30px;
+    border: 3px solid #3be374;
     margin-top: 50px;
     transition: 1.2s;
 }
 
-.formacao-academica .graduacao:hover{
+.formacao-academica .graduacao:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #3be37480;
+    box-shadow: 0 0 30px #3be37480;
 }
 
-.formacao-academica .idioma{
+.formacao-academica .idioma {
     color: #fff;
     padding: 25px;
     border-radius: 30px;
     transition: 1.2s;
 }
 
-.formacao-academica .idioma:hover{
+.formacao-academica .idioma:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #3be37480;
+    box-shadow: 0 0 30px #3be37480;
 }
 
 /*PERSONALIZANDO MEUS PROJETOS*/
-section.meus-projetos{
+.meus-projetos {
     padding: 40px 4%;
 }
 
-section.meus-projetos .flex{
+.meus-projetos .container {
     display: flex;
     gap: 45px;
     align-items: stretch;
 }
 
-.meus-projetos .card-projeto{
+.meus-projetos .card-projeto {
     color: #fff;
     flex: 1;
     padding: 40px;
     border-radius: 30px;
+    border: 3px solid #3be374;
     margin-top: 50px;
     transition: 1.2s;
 }
 
-.meus-projetos .card-projeto:hover{
+.meus-projetos .card-projeto:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #3be37480;
+    box-shadow: 0 0 30px #3be37480;
 }
 
-.meus-projetos .card-projeto h3{
+.meus-projetos .card-projeto h3 {
     font-size: 26px;
     margin: 15px 0;
 }
 
-.meus-projetos .card-projeto p{
+.meus-projetos .card-projeto p {
     text-align: justify;
     hyphens: auto;
-    font-size: 17px;   
+    font-size: 17px;
     line-height: 1.6;
     font-size: 16px;
 }
 
-.card-projeto img{
+.card-projeto img {
     width: 300px;
     height: auto;
 }
 
-.card-projeto a{
+.card-projeto a {
     color: #00ff00;
 }
 
 /*PERSONALIZANDO CONTATO*/
-section.entre-contato{
+section.entre-contato {
     padding: 40px 4%;
 }
 
-.form-box{
+.form-box {
     background-color: #fff;
     max-width: 500px;
     padding: 40px;
     border-radius: 20px;
-    margin: 0 auto; 
+    margin: 0 auto;
     box-shadow: 0 0 15px #3be37480;
 }
 
-section.entre-contato p{
+section.entre-contato p {
     color: #fff;
     text-align: center;
     font-size: 23px;
@@ -338,21 +344,21 @@ section.entre-contato p{
 
 }
 
-.formulario{
+.formulario {
     position: relative;
     margin: 30px 0;
 }
 
-.formulario label{
+.formulario label {
     position: absolute;
-    left: 5px;   
+    left: 5px;
     bottom: 5px;
     color: #999;
     transition: all 0.3s ease;
     cursor: text;
 }
 
-.input{
+.input {
     width: 100%;
     border: none;
     border-bottom: 2px solid #3be374;
@@ -370,58 +376,58 @@ textarea.input {
 }
 
 
-.formulario .input:focus ~ label,
-.formulario .input:valid ~ label{
+.formulario .input:focus~label,
+.formulario .input:valid~label {
     transform: translateY(-30px);
     font-size: 12px;
     color: #35b23b;
 }
 
-.formulario input:invalid:focus ~ label {
-  transform: translateY(-30px);
-  font-size: 12px;
-  color: #ff0021;
+.formulario input:invalid:focus~label {
+    transform: translateY(-30px);
+    font-size: 12px;
+    color: #ff0021;
 }
 
-.texto-grande{
+.texto-grande {
     position: relative;
     margin: 30px 0;
 }
 
-.texto-grande label{
+.texto-grande label {
     position: absolute;
-    left: 5px;   
+    left: 5px;
     bottom: 5px;
     color: #999;
     transition: all 0.3s ease;
     cursor: text;
 }
 
-.texto-grande .input:focus ~ label,
-.texto-grande .input:valid ~ label{
+.texto-grande .input:focus~label,
+.texto-grande .input:valid~label {
     transform: translateY(-100px);
     font-size: 12px;
     color: #35b23b;
 }
 
-.texto-grande .input:invalid:focus ~ label {
-  transform: translateY(-100px);
-  font-size: 12px;
-  color: #ff0021;
+.texto-grande .input:invalid:focus~label {
+    transform: translateY(-100px);
+    font-size: 12px;
+    color: #ff0021;
 }
 
-.btn-envia{
+.btn-envia {
     width: 100%;
-    text-align: center;  
-    transition: 0.3s ease;  
+    text-align: center;
+    transition: 0.3s ease;
 }
 
-.btn-envia :hover{
+.btn-envia :hover {
     box-shadow: 0px 0px 8px #00ff00;
     transform: scale(1.05);
 }
 
-form input[type=submit]{
+form input[type=submit] {
     font-size: 16px;
     font-weight: 700;
     padding: 10px 40px;
@@ -432,19 +438,60 @@ form input[type=submit]{
     cursor: pointer;
 }
 
-/*PERSONALIZANDO RODAPÉ*/
-footer{
-    padding: 40px 4%;
+/*PERSONALIZANDO BOTAO VOLTAR AO TOPO*/
+.topo {
+    background: #00ff00;
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+
 }
 
-footer .icones-rodape img{
+.topo img{
+    width: 30px;
+    height: 30px;
+}
+
+.show-button .topo{
+    right: 20px;
+    transition: .3s all;
+}
+
+/*PERSONALIZANDO RODAPÉ*/
+footer {
+    padding: 20px 4%;
+    background-color: #0a0a0a;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    text-align: justify;
+}
+
+.icones-rodape {
+    display: flex;
+    gap: 20px;
+}
+
+.icones-rodape img {
     width: 50px;
     height: auto;
 }
 
-footer .flex{
+footer .container {
     display: flex;
     gap: 45px;
-    align-items: center;
-    justify-content: space-around;
 }
