@@ -1,4 +1,4 @@
-# :pushpin: Portfólio Isabelly
+# :pushpin: Portfólio Pessoal :bust_in_silhouette:
 
 Bem-vindo(a) ao meu portfólio pessoal! 🚀  
 Aqui apresento quem sou, minha trajetória, hobbies, formação e alguns projetos acadêmicos.
