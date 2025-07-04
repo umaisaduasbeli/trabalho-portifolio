@@ -1,6 +1,6 @@
 # :pushpin: Portfólio Pessoal :bust_in_silhouette:
 
-Bem-vindo(a) ao meu portfólio pessoal! :Rocket: 
+Bem-vindo(a) ao meu portfólio pessoal! :rocket: 
 Aqui apresento quem sou, minha trajetória, hobbies, formação e alguns projetos acadêmicos.
 
 ---
@@ -12,7 +12,7 @@ Aqui apresento quem sou, minha trajetória, hobbies, formação e alguns projeto
 |-- /src  
     |-- /images  
     |-- /css  
-    |-- /js
+    |-- /js  
 |-- README.md  
 
 ---
